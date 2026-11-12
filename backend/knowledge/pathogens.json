@@ -1,0 +1,176 @@
+{
+  "version": "1.0",
+  "description": "Base de conocimiento de patógenos y enfermedades infecciosas",
+  "pathogens": {
+    "HIV": {
+      "name": "Virus de la Inmunodeficiencia Humana (VIH-1)",
+      "family": "Retroviridae",
+      "type": "Retrovirus RNA",
+      "disease": "SIDA",
+      "mechanism": "Entrada via CD4 y CCR5/CXCR4; transcripción reversa; integración; ensamblaje; maduración por proteasa",
+      "targets": ["Env_gp120_gp41", "CD4", "CCR5", "CXCR4", "Reverse_Transcriptase", "Integrase", "Protease", "Capsid_CA", "Vpu", "Nef", "Vif", "Tat", "Rev"],
+      "variants": ["Clade B", "Clade C", "Clade A1", "Clade D", "CRF01_AE", "CRF02_AG"],
+      "similar_treated": ["HIV-2", "SIV", "HTLV-1"],
+      "cell_types": ["CD4+ T cells", "Macrophages", "Dendritic cells"],
+      "key_pathways": ["NF-kB", "PI3K-Akt", "MAPK", "CDK1-Nup (nuclear import)"],
+      "references": [
+        "Frontiers in Immunology 2026 - HIV-1 structural proteins and antiviral therapies",
+        "PLOS Pathogens 2026 - HIV capsid inhibitors: Mechanisms, resistance, and therapeutic advances",
+        "Nature 2026 - HIV-1 signalling remodels nuclear pores to licence infection",
+        "Nature Microbiology 2026 - Combination therapy with bNAbs, ART and CCR5 blockade",
+        "StatPearls 2026 - HIV Antiretroviral Therapy"
+      ]
+    },
+    "Dengue": {
+      "name": "Virus del dengue",
+      "family": "Flaviviridae",
+      "type": "Flavivirus RNA",
+      "disease": "Dengue",
+      "mechanism": "Entrada via receptor DC-SIGN; replicación en reticulo endoplásmico; proteínas estructurales C, prM/M, E; no integración",
+      "targets": ["NS1", "NS3_Protease", "NS5_Polimerasa", "NS5_MTase", "Envelope_E"],
+      "variants": ["DENV-1", "DENV-2", "DENV-3", "DENV-4"],
+      "similar_treated": ["Zika", "West Nile", "Yellow Fever"],
+      "cell_types": ["Monocitos", "Macrófagos", "Células dendríticas"],
+      "key_pathways": ["Autophagy", "ER stress", "Innate immunity (RIG-I/MDA5)"],
+      "references": [
+        "Ejemplo: DENV-2, mecanismo de entrada vía DC-SIGN, replicación dependiente de NS5 y NS3"
+      ]
+    },
+    "Malaria": {
+      "name": "Malaria (Plasmodium spp.)",
+      "family": "Plasmodiidae",
+      "type": "Parásito protozoario",
+      "disease": "Malaria",
+      "mechanism": "Infección de hepatocitos y eritrocitos; ciclo eritrocítico y exoeritrocítico; digestión de hemoglobina",
+      "targets": ["DHFR", "Cytochrome_b", "PFATP6", "Plasmepsin", "HSP90"],
+      "variants": ["P. falciparum", "P. vivax", "P. malariae", "P. ovale", "P. knowlesi"],
+      "similar_treated": ["Toxoplasmosis", "Babesiosis"],
+      "cell_types": ["Hepatocitos", "Eritrocitos"],
+      "key_pathways": ["Folate metabolism", "Mitochondrial electron transport", "Hemoglobin digestion"],
+      "references": [
+        "WHO Guidelines for malaria 2023"
+      ]
+    },
+    "Tuberculosis": {
+      "name": "Tuberculosis",
+      "family": "Mycobacteriaceae",
+      "type": "Bacteria acidorresistente",
+      "disease": "Tuberculosis (TB)",
+      "mechanism": "Infección de macrófagos; formación de granulomas; resistencia a estrés oxidativo y antibióticos",
+      "targets": ["RNA_polimerasa_beta", "InhA", "KatG", "PncA", "DprE1", "MmpL3"],
+      "variants": ["M. tuberculosis", "M. bovis", "MDR-TB", "XDR-TB"],
+      "similar_treated": ["Lepra (M. leprae)", "NTM"],
+      "cell_types": ["Macrófagos alveolares", "Neutrófilos", "Linfocitos T CD4+"],
+      "key_pathways": ["Mycolic acid synthesis", "Peptidoglycan synthesis", "Respiratory chain"],
+      "references": [
+        "WHO Global TB Report 2024"
+      ]
+    },
+    "COVID19": {
+      "name": "COVID-19",
+      "family": "Coronaviridae",
+      "type": "Coronavirus RNA (+ssRNA)",
+      "disease": "COVID-19",
+      "mechanism": "Entrada via ACE2 y TMPRSS2; replicación en citoplasma; respuesta inmune exacerbada",
+      "targets": ["Spike_S", "ACE2", "TMPRSS2", "3CLpro_Mpro", "PLpro", "RdRp", "Helicase"],
+      "variants": ["Alpha", "Beta", "Gamma", "Delta", "Omicron (BA.1-BA.5, XBB)"],
+      "similar_treated": ["SARS-CoV-1", "MERS-CoV", "Influenza"],
+      "cell_types": ["Epitelio respiratorio", "Neumocitos tipo II", "Células endoteliales"],
+      "key_pathways": ["Renin-angiotensin system", "Interferon response", "NF-kB", "Pyroptosis"],
+      "references": [
+        "WHO COVID-19 Guidelines 2024",
+        "NIH COVID-19 Treatment Guidelines"
+      ]
+    },
+    "Influenza": {
+      "name": "Influenza",
+      "family": "Orthomyxoviridae",
+      "type": "Virus RNA (-ssRNA, 8 segmentos)",
+      "disease": "Gripe / Influenza",
+      "mechanism": "Entrada via hemaglutinina; replicación nuclear; ensamblaje en membrana; liberación por neuraminidasa",
+      "targets": ["Hemagglutinin_HA", "Neuraminidase_NA", "M2_ion_channel", "Polymerase_PA_PB1_PB2", "NS1"],
+      "variants": ["Influenza A (H1N1, H3N2)", "Influenza B (Yamagata, Victoria)"],
+      "similar_treated": ["COVID-19", "RSV"],
+      "cell_types": ["Epitelio respiratorio", "Neumocitos"],
+      "key_pathways": ["Viral mRNA splicing", "Nuclear import/export", "Apoptosis"],
+      "references": [
+        "WHO Influenza Guidelines 2024"
+      ]
+    },
+    "Hepatitis_C": {
+      "name": "Hepatitis C",
+      "family": "Flaviviridae",
+      "type": "Flavivirus RNA (+ssRNA)",
+      "disease": "Hepatitis C crónica",
+      "mechanism": "Entrada via receptor LDL-R y claudina-1; replicación en reticulo endoplásmico; infección persistente",
+      "targets": ["NS3_4A_Protease", "NS5A", "NS5B_Polimerasa", "Core_protein"],
+      "variants": ["Genotipo 1", "Genotipo 2", "Genotipo 3", "Genotipo 4", "Genotipo 5", "Genotipo 6"],
+      "similar_treated": ["Hepatitis B", "Dengue"],
+      "cell_types": ["Hepatocitos"],
+      "key_pathways": ["Lipid metabolism", "PI3K-Akt", "Oxidative stress"],
+      "references": [
+        "WHO Guidelines for hepatitis C 2023"
+      ]
+    },
+    "Chikungunya": {
+      "name": "Chikungunya",
+      "family": "Togaviridae",
+      "type": "Alphavirus RNA (+ssRNA)",
+      "disease": "Chikungunya",
+      "mechanism": "Entrada via receptor celular (Mxra8); replicación citoplasmática; artritis crónica post-infecciosa",
+      "targets": ["nsP1", "nsP2_Proteasa", "nsP3", "nsP4_Polimerasa", "Capsid_C", "E1_E2"],
+      "variants": ["ECSA genotype", "Asian genotype", "IOL genotype"],
+      "similar_treated": ["Mayaro", "Onyong-nyong", "Dengue", "Zika"],
+      "cell_types": ["Fibroblastos", "Células dendríticas", "Macrófagos"],
+      "key_pathways": ["Innate immunity", "NF-kB", "Inflammation"],
+      "references": [
+        "Lancet Infectious Diseases 2023 - Chikungunya"
+      ]
+    },
+    "Zika": {
+      "name": "Zika",
+      "family": "Flaviviridae",
+      "type": "Flavivirus RNA (+ssRNA)",
+      "disease": "Fiebre Zika / Microcefalia congénita",
+      "mechanism": "Entrada via receptor AXL y Tyro3; neurotropismo; infección de células progenitoras neurales",
+      "targets": ["NS3_Proteasa", "NS5_Polimerasa", "Envelope_E", "NS1"],
+      "variants": ["Asian lineage", "African lineage"],
+      "similar_treated": ["Dengue", "West Nile", "Yellow Fever"],
+      "cell_types": ["Células progenitoras neurales", "Neuroni", "Células de la placenta"],
+      "key_pathways": ["Wnt signaling", "p53 pathway", "Autophagy"],
+      "references": [
+        "WHO Zika Guidelines 2023"
+      ]
+    },
+    "MRSA": {
+      "name": "Staphylococcus aureus resistente a meticilina (MRSA)",
+      "family": "Staphylococcaceae",
+      "type": "Bacteria Gram-positiva",
+      "disease": "Infecciones por MRSA",
+      "mechanism": "Producción de PBP2a (mecA); biofilm; toxinas (TSST-1, enterotoxinas); resistencia multi-droga",
+      "targets": ["PBP2a", "LukSF-PV", "TSST-1", "MecA", "NorA_efflux"],
+      "variants": ["HA-MRSA", "CA-MRSA", "LA-MRSA"],
+      "similar_treated": ["Streptococcus pyogenes", "Enterococcus faecium (VRE)"],
+      "cell_types": ["Queratinocitos", "Neutrófilos", "Macrófagos"],
+      "key_pathways": ["Cell wall synthesis", "Quorum sensing", "Biofilm formation"],
+      "references": [
+        "CDC Guidelines for MRSA 2024"
+      ]
+    },
+    "E_Coli_Resistente": {
+      "name": "Escherichia coli resistente",
+      "family": "Enterobacteriaceae",
+      "type": "Bacteria Gram-negativa",
+      "disease": "Infecciones por E. coli resistente",
+      "mechanism": "Producción de beta-lactamasas (ESBL, KPC, NDM); permeabilidad de membrana externa; efflux pumps",
+      "targets": ["Beta_lactamases_NDM_KPC", "LpxC", "AcrAB-TolC", "FimH"],
+      "variants": ["ESBL-producing", "Carbapenem-resistant (CRE)", "MDR"],
+      "similar_treated": ["Klebsiella pneumoniae", "Pseudomonas aeruginosa", "Acinetobacter baumannii"],
+      "cell_types": ["Urotelio", "Macrófagos", "Células intestinales"],
+      "key_pathways": ["Lipopolysaccharide synthesis", "Cell wall synthesis", "Efflux"],
+      "references": [
+        "WHO Priority Pathogens List 2024"
+      ]
+    }
+  }
+}

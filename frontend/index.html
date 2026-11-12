@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biomedical Research AI - Motor de Hipótesis Terapéuticas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Biomedical Research AI</h1>
+            <p class="subtitle">Motor de Hipótesis Terapéuticas — Cerebro de razonamiento simbólico + IA</p>
+        </header>
+
+        <div class="ai-showcase" aria-hidden="true">
+            <canvas id="particle-sphere"></canvas>
+        </div>
+
+        <div class="status-bar">
+            <span id="status-indicator" class="status-dot"></span>
+            <span id="status-text">Verificando conexión...</span>
+            <span id="model-info" class="model-badge"></span>
+        </div>
+
+        <main>
+            <section class="query-section">
+                <label for="query-input">Consulta de investigación:</label>
+                <textarea id="query-input" rows="3" placeholder="Ejemplo: Analiza el virus del dengue serotipo 2 y sugiere posibles antivirales.&#10;Ejemplo: Evalúa el fármaco Lenacapavir contra la diana Capsid_CA.&#10;Ejemplo: Compara Lenacapavir vs Dolutegravir para VIH-1."></textarea>
+                <div class="button-group">
+                    <button id="btn-analyze" class="btn-primary">Analizar</button>
+                    <button id="btn-evaluate" class="btn-secondary">Evaluar Fármaco</button>
+                    <button id="btn-combine" class="btn-secondary">Combinar Fármacos</button>
+                    <button id="btn-compare" class="btn-secondary">Comparar Alternativas</button>
+                </div>
+            </section>
+
+            <section class="aux-section" id="aux-section" style="display: none;">
+                <div id="aux-fields"></div>
+            </section>
+
+            <section class="results-section" id="results-section" style="display: none;">
+                <div class="results-header">
+                    <h2>Resultados del Cerebro</h2>
+                    <div class="header-actions">
+                        <button id="btn-memory" class="btn-small">Ver Memoria</button>
+                        <button id="btn-copy" class="btn-small">Copiar</button>
+                    </div>
+                </div>
+                <div id="brain-cards" class="brain-cards"></div>
+                <div id="results-content" class="results-content"></div>
+                <details class="raw-details">
+                    <summary>Respuesta cruda / JSON</summary>
+                    <div id="raw-response" class="raw-response"></div>
+                </details>
+            </section>
+        </main>
+
+        <footer>
+            <p>HIPÓTESIS COMPUTACIONAL — Requiere validación experimental y supervisión profesional. El razonamiento simbólico complementa, no reemplaza, el juicio científico.</p>
+        </footer>
+    </div>
+
+    <script src="brain-visual.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,245 @@
+{
+  "version": "1.0",
+  "description": "Base de conocimiento de dianas moleculares y proteínas",
+  "targets": {
+    "Env_gp120_gp41": {
+      "name": "gp120 / gp41 (Env)",
+      "organism": "HIV-1",
+      "type": "Viral protein",
+      "function": "Mediadores de entrada: unión a CD4 y correceptores CCR5/CXCR4; fusión de membranas mediada por gp41",
+      "pathways": ["HIV entry", "Membrane fusion"],
+      "known_inhibitors": ["Enfuvirtide", "Ibalizumab", "Fostemsavir", "Leronlimab (anti-CCR5)"],
+      "evidence_level": "High",
+      "references": [
+        "Frontiers in Immunology 2026",
+        "Nature Microbiology 2026"
+      ]
+    },
+    "CCR5": {
+      "name": "CCR5",
+      "organism": "Homo sapiens",
+      "type": "Host receptor",
+      "function": "Correceptor de quimiocina para entrada de VIH-1 R5-tropo",
+      "pathways": ["HIV entry", "Chemokine signaling"],
+      "known_inhibitors": ["Maraviroc", "Leronlimab", "Vicriviroc"],
+      "evidence_level": "High",
+      "references": [
+        "Nature Microbiology 2026",
+        "StatPearls 2026"
+      ]
+    },
+    "CXCR4": {
+      "name": "CXCR4",
+      "organism": "Homo sapiens",
+      "type": "Host receptor",
+      "function": "Correceptor de quimiocina para entrada de VIH-1 X4-tropo",
+      "pathways": ["HIV entry", "Chemokine signaling"],
+      "known_inhibitors": ["Plerixafor", "Balixafortide (investigational)"],
+      "evidence_level": "Medium",
+      "references": [
+        "StatPearls 2026"
+      ]
+    },
+    "Reverse_Transcriptase": {
+      "name": "Reverse Transcriptase (RT)",
+      "organism": "HIV-1",
+      "type": "Viral enzyme",
+      "function": "Transcriptasa reversa: síntesis de ADN proviral a partir de ARN viral",
+      "pathways": ["Reverse transcription", "DNA synthesis"],
+      "known_inhibitors": ["Abacavir", "Emtricitabine", "Lamivudine", "Tenofovir", "Zidovudina", "Efavirenz", "Nevirapina", "Etravirine", "Rilpivirine", "Doravirina", "Islatravir"],
+      "evidence_level": "High",
+      "references": [
+        "StatPearls 2026",
+        "IAS AIDS 2026"
+      ]
+    },
+    "Integrase": {
+      "name": "Integrase (IN)",
+      "organism": "HIV-1",
+      "type": "Viral enzyme",
+      "function": "Integración del ADN proviral en genoma hospedador",
+      "pathways": ["Viral integration", "DNA repair"],
+      "known_inhibitors": ["Raltegravir", "Elvitegravir", "Dolutegravir", "Bictegravir", "Cabotegravir", "GS-3242 (investigational)"],
+      "evidence_level": "High",
+      "references": [
+        "StatPearls 2026",
+        "Virology Journal 2026"
+      ]
+    },
+    "Protease": {
+      "name": "HIV-1 Protease (PR)",
+      "organism": "HIV-1",
+      "type": "Viral enzyme",
+      "function": "Procesamiento de Gag y Gag-Pol; generación de partículas infecciosas maduras",
+      "pathways": ["Viral maturation", "Protein processing"],
+      "known_inhibitors": ["Atazanavir", "Darunavir", "Fosamprenavir", "Ritonavir", "Saquinavir", "Tipranavir", "Lopinavir"],
+      "evidence_level": "High",
+      "references": [
+        "StatPearls 2026",
+        "Frontiers in Immunology 2026"
+      ]
+    },
+    "Capsid_CA": {
+      "name": "Capsid protein (CA / p24)",
+      "organism": "HIV-1",
+      "type": "Viral structural protein",
+      "function": "Forma el core cónico; esencial para importación nuclear, protección del genoma y ensamblaje",
+      "pathways": ["Nuclear import", "Viral uncoating", "Assembly"],
+      "known_inhibitors": ["Lenacapavir", "GS-878", "PF-74", "GSK-878", "VH-280", "VH-499", "IC-2i"],
+      "evidence_level": "High",
+      "references": [
+        "PLOS Pathogens 2026",
+        "MedComm 2026",
+        "Frontiers in Immunology 2026"
+      ]
+    },
+    "NS3_Protease": {
+      "name": "NS3 Proteasa / Helicasa",
+      "organism": "Dengue / Zika",
+      "type": "Viral enzyme",
+      "function": "Procesamiento de poliproteína viral; esencial para maduración de proteínas virales",
+      "pathways": ["Viral polyprotein processing", "RNA replication"],
+      "known_inhibitors": ["Danoprevir", "Grazoprevir (investigational)", "Sovateltide (investigational)"],
+      "evidence_level": "Medium",
+      "references": [
+        "DrugBank",
+        "ChEMBL"
+      ]
+    },
+    "NS5_Polimerasa": {
+      "name": "NS5 RNA-dependent RNA polymerase",
+      "organism": "Dengue / Zika / Hepatitis C",
+      "type": "Viral enzyme",
+      "function": "Replicación del genoma RNA viral",
+      "pathways": ["RNA replication", "Viral transcription"],
+      "known_inhibitors": ["Remdesivir (investigational)", "Balapiravir (phase II)", "Favipiravir (investigational)", "Sofosbuvir (repurposing)"],
+      "evidence_level": "Medium",
+      "references": [
+        "ChEMBL",
+        "ClinicalTrials.gov"
+      ]
+    },
+    "3CLpro_Mpro": {
+      "name": "3C-like protease (Mpro)",
+      "organism": "SARS-CoV-2 / Other coronaviruses",
+      "type": "Viral enzyme",
+      "function": "Procesamiento de poliproteína replicasa; esencial para replicación",
+      "pathways": ["Viral polyprotein processing", "Replication"],
+      "known_inhibitors": ["Nirmatrelvir (Paxlovid)", "Ensitrelvir", "Paxlovid", "Simnotrelvir"],
+      "evidence_level": "High",
+      "references": [
+        "WHO COVID-19 Guidelines 2024",
+        "NIH COVID-19 Treatment Guidelines"
+      ]
+    },
+    "RdRp": {
+      "name": "RNA-dependent RNA polymerase (RdRp)",
+      "organism": "SARS-CoV-2 / Influenza / RSV",
+      "type": "Viral enzyme",
+      "function": "Replicación y transcripción del genoma RNA viral",
+      "pathways": ["RNA replication", "Transcription"],
+      "known_inhibitors": ["Remdesivir", "Molnupiravir", "Favipiravir", "Sofosbuvir (repurposing)"],
+      "evidence_level": "High",
+      "references": [
+        "WHO COVID-19 Guidelines 2024"
+      ]
+    },
+    "Hemagglutinin_HA": {
+      "name": "Hemagglutinin (HA)",
+      "organism": "Influenza",
+      "type": "Viral surface glycoprotein",
+      "function": "Unión a ácido siálico; entrada a célula hospedadora",
+      "pathways": ["Viral entry", "Membrane fusion"],
+      "known_inhibitors": ["Oseltamivir", "Zanamivir", "Peramivir", "Laninamivir", "Baloxavir"],
+      "evidence_level": "High",
+      "references": [
+        "WHO Influenza Guidelines 2024"
+      ]
+    },
+    "Neuraminidase_NA": {
+      "name": "Neuraminidase (NA)",
+      "organism": "Influenza",
+      "type": "Viral surface glycoprotein",
+      "function": "Liberación de viriones; previene agregación viral",
+      "pathways": ["Viral release", "Sialic acid metabolism"],
+      "known_inhibitors": ["Oseltamivir", "Zanamivir", "Peramivir", "Laninamivir"],
+      "evidence_level": "High",
+      "references": [
+        "WHO Influenza Guidelines 2024"
+      ]
+    },
+    "M2_ion_channel": {
+      "name": "M2 ion channel",
+      "organism": "Influenza A",
+      "type": "Viral ion channel",
+      "function": "Acidificación del interior del virión; liberación de RNAs para replicación",
+      "pathways": ["Viral uncoating", "pH regulation"],
+      "known_inhibitors": ["Amantadina", "Rimantadina"],
+      "evidence_level": "Low (resistencia generalizada)",
+      "references": [
+        "WHO Influenza Guidelines 2024"
+      ]
+    },
+    "DHFR": {
+      "name": "Dihydrofolate reductase (DHFR)",
+      "organism": "Plasmodium falciparum",
+      "type": "Parasite enzyme",
+      "function": "Síntesis de tetrahidrofolato; esencial para síntesis de ADN",
+      "pathways": ["Folate metabolism", "DNA synthesis"],
+      "known_inhibitors": ["Pyrimethamine", "Proguanil", "Methotrexate (investigational)"],
+      "evidence_level": "High",
+      "references": [
+        "WHO Guidelines for malaria 2023"
+      ]
+    },
+    "Cytochrome_b": {
+      "name": "Cytochrome b (cyt b)",
+      "organism": "Plasmodium falciparum",
+      "type": "Parasite protein",
+      "function": "Complejo III de cadena respiratoria mitocondrial",
+      "pathways": ["Mitochondrial electron transport", "Oxidative phosphorylation"],
+      "known_inhibitors": ["Atovaquona", "Endochin (investigational)"],
+      "evidence_level": "High",
+      "references": [
+        "WHO Guidelines for malaria 2023"
+      ]
+    },
+    "RNA_polimerasa_beta": {
+      "name": "RNA polymerase beta subunit (rpoB)",
+      "organism": "Mycobacterium tuberculosis",
+      "type": "Bacterial enzyme",
+      "function": "Transcripción de ADN a ARNm",
+      "pathways": ["Transcription", "Gene expression"],
+      "known_inhibitors": ["Rifampicin", "Rifabutin", "Rifapentine"],
+      "evidence_level": "High",
+      "references": [
+        "WHO Global TB Report 2024"
+      ]
+    },
+    "InhA": {
+      "name": "Enoyl-ACP reductase (InhA)",
+      "organism": "Mycobacterium tuberculosis",
+      "type": "Bacterial enzyme",
+      "function": "Síntesis de ácidos micólicos; esencial para pared celular",
+      "pathways": ["Fatty acid synthesis", "Cell wall synthesis"],
+      "known_inhibitors": ["Isoniazida", "Ethionamida", "BTZ043 (investigational)"],
+      "evidence_level": "High",
+      "references": [
+        "WHO Global TB Report 2024"
+      ]
+    },
+    "Beta_lactamases_NDM_KPC": {
+      "name": "Beta-lactamasas (NDM, KPC)",
+      "organism": "Enterobacteriaceae",
+      "type": "Bacterial enzyme",
+      "function": "Hidrólisis de beta-lactámicos; resistencia antibiótica",
+      "pathways": ["Antibiotic resistance", "Beta-lactam degradation"],
+      "known_inhibitors": ["Avibactam", "Vaborbactam", "Taniborbactam", "Durlobactam"],
+      "evidence_level": "Medium-High",
+      "references": [
+        "WHO Priority Pathogens List 2024",
+        "CDC Guidelines 2024"
+      ]
+    }
+  }
+}

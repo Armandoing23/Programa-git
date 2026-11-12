@@ -1,0 +1,535 @@
+{
+  "version": "1.0",
+  "description": "Base de conocimiento farmacológica",
+  "drugs": {
+    "Lenacapavir": {
+      "name": "Lenacapavir",
+      "brand": "Sunlenca",
+      "class": "Capsid inhibitor",
+      "type": "Small molecule",
+      "mechanism": "Inhibidor de cápside de VIH-1; se une a un bolsillo conservado en la interfaz monómero-cápside, estabilizando el hexámero y bloqueando la importación nuclear y la maduración viral",
+      "targets": ["Capsid_CA"],
+      "approval_status": "FDA/EMA approved",
+      "route": "Subcutaneous (twice-yearly) / Oral (investigational)",
+      "indication": "VIH-1 multirresistente en adultos; PrEP (aprobado en múltiples países)",
+      "evidence": "Approved 2022 (EU) for MDR HIV; PURPOSE 1/2 trials (PrEP); ISLEND-1/2 trials (weekly oral with islatravir)",
+      "evidence_level": "High",
+      "synergies": ["Bictegravir", "Dolutegravir", "Islatravir", "bNAbs"],
+      "interactions": ["Potential interaction with CYP3A inducers/inhibitors (oral formulation)"],
+      "risks": ["Injection-site reactions (necrosis/ulceration if misadministered)", "Resistance mutations Q67H/N74D"],
+      "references": [
+        "PLOS Pathogens 2026",
+        "Gilead AIDS 2026",
+        "StatPearls 2026",
+        "ClinicalTrials.gov NCT04994509, NCT04925752"
+      ]
+    },
+    "Islatravir": {
+      "name": "Islatravir",
+      "brand": "Investigational",
+      "class": "NRTTI (Nucleoside Reverse Transcriptase Translocation Inhibitor)",
+      "type": "Small molecule",
+      "mechanism": "Análogo de nucleósido que causa detención de la cadena de ADN viral durante la transcripción reversa con retraso en la translocación",
+      "targets": ["Reverse_Transcriptase"],
+      "approval_status": "Investigational",
+      "route": "Oral (weekly)",
+      "indication": "VIH-1 treatment and prevention",
+      "evidence": "ISLEND-1/2 phase 3 trials: non-inferior to daily B/F/TAF; well tolerated",
+      "evidence_level": "High (Phase 3)",
+      "synergies": ["Lenacapavir"],
+      "interactions": ["Potential hematologic effects (lymphopenia)"],
+      "risks": ["Lymphopenia", "Long-term safety data pending"],
+      "references": [
+        "IAS AIDS 2026",
+        "Gilead AIDS 2026",
+        "ClinicalTrials.gov"
+      ]
+    },
+    "Bictegravir": {
+      "name": "Bictegravir",
+      "brand": "Biktarvy",
+      "class": "INSTI (Integrase Strand Transfer Inhibitor)",
+      "type": "Small molecule",
+      "mechanism": "Inhibidor de integrasa de segunda generación; bloquea la transferencia de hebra del ADN proviral al genoma hospedador",
+      "targets": ["Integrase"],
+      "approval_status": "FDA/EMA approved",
+      "route": "Oral daily",
+      "indication": "VIH-1 infection (treatment-naive and experienced)",
+      "evidence": "Preferred first-line regimen (B/F/TAF); high barrier to resistance; 5-year pediatric data",
+      "evidence_level": "High",
+      "synergies": ["Emtricitabine", "Tenofovir alafenamide", "Lenacapavir"],
+      "interactions": ["Cationic-containing antacids", "Do not use with dofetilide"],
+      "risks": ["Insomnia", "Headache", "Creatinine increase (benign)"],
+      "references": [
+        "StatPearls 2026",
+        "Gilead AIDS 2026",
+        "BICSTaR study NCT03580668"
+      ]
+    },
+    "Dolutegravir": {
+      "name": "Dolutegravir",
+      "brand": "Tivicay",
+      "class": "INSTI",
+      "type": "Small molecule",
+      "mechanism": "Inhibidor de integrasa de segunda generación",
+      "targets": ["Integrase"],
+      "approval_status": "FDA/EMA approved",
+      "route": "Oral daily",
+      "indication": "VIH-1 and VIH-2 infection",
+      "evidence": "WHO/DHHS first-line recommendation; effective across subtypes A1/D",
+      "evidence_level": "High",
+      "synergies": ["Lamivudine", "Emtricitabine", "Tenofovir", "Rilpivirine"],
+      "interactions": ["Metformin (increase metformin levels)", "Cationic antacids", "UGT1A1/CYP3A inducers"],
+      "risks": ["Insomnia", "Headache", "Weight gain", "Neural tube defects risk (first trimester)"],
+      "references": [
+        "StatPearls 2026",
+        "Virology Journal 2026",
+        "WHO Guidelines"
+      ]
+    },
+    "Maraviroc": {
+      "name": "Maraviroc",
+      "brand": "Selzentry",
+      "class": "CCR5 antagonist",
+      "type": "Small molecule",
+      "mechanism": "Bloquea el correceptor CCR5, previniendo la entrada de VIH-1 R5-tropo",
+      "targets": ["CCR5"],
+      "approval_status": "FDA/EMA approved",
+      "route": "Oral daily",
+      "indication": "VIH-1 R5-tropo infection",
+      "evidence": "Approved for CCR5-tropic HIV; hepatotoxicity warnings",
+      "evidence_level": "High",
+      "synergies": ["Darunavir", "Ritonavir", "Other ARTs"],
+      "interactions": ["CYP3A inducers/inhibitors"],
+      "risks": ["Hepatotoxicity", "Cardiovascular events", "Upper respiratory infection"],
+      "references": [
+        "StatPearls 2026"
+      ]
+    },
+    "Leronlimab": {
+      "name": "Leronlimab",
+      "brand": "Investigational",
+      "class": "Anti-CCR5 monoclonal antibody",
+      "type": "Biologic (mAb)",
+      "mechanism": "Anticuerpo humanizado IgG4 que bloquea la unión de gp120 a CCR5",
+      "targets": ["CCR5"],
+      "approval_status": "Investigational",
+      "route": "Subcutaneous",
+      "indication": "HIV infection; graft-versus-host disease; NASH",
+      "evidence": "Reduced reservoir seeding in infant macaque model; antiviral activity in humans",
+      "evidence_level": "Medium",
+      "synergies": ["ART", "bNAbs"],
+      "interactions": ["Unknown; limited data"],
+      "risks": ["Injection-site reactions", "Did not prevent reservoir establishment as monotherapy"],
+      "references": [
+        "Nature Microbiology 2026",
+        "ClinicalTrials.gov"
+      ]
+    },
+    "Teropavimab": {
+      "name": "Teropavimab (GS-5423)",
+      "brand": "Investigational",
+      "class": "Broadly neutralizing antibody (bNAb)",
+      "type": "Biologic (mAb)",
+      "mechanism": "bNAb anti-Env; amplio espectro contra variantes de VIH-1",
+      "targets": ["Env_gp120_gp41"],
+      "approval_status": "Investigational",
+      "route": "Subcutaneous (long-acting)",
+      "indication": "HIV treatment and prevention",
+      "evidence": "Phase 2: 104 weeks with lenacapavir; suppression maintained",
+      "evidence_level": "Medium (Phase 2)",
+      "synergies": ["Lenacapavir", "Zinlirvimab", "ART"],
+      "interactions": ["Unknown"],
+      "risks": ["Resistance by escape variants in Env", "Infusion reactions"],
+      "references": [
+        "Gilead AIDS 2026",
+        "ClinicalTrials.gov NCT05729568"
+      ]
+    },
+    "Zinlirvimab": {
+      "name": "Zinlirvimab (GS-2872)",
+      "brand": "Investigational",
+      "class": "Broadly neutralizing antibody (bNAb)",
+      "type": "Biologic (mAb)",
+      "mechanism": "bNAb anti-Env; mecanismo de acción complementario a teropavimab",
+      "targets": ["Env_gp120_gp41"],
+      "approval_status": "Investigational",
+      "route": "Subcutaneous (long-acting)",
+      "indication": "HIV treatment",
+      "evidence": "Phase 2 with teropavimab and lenacapavir",
+      "evidence_level": "Medium (Phase 2)",
+      "synergies": ["Teropavimab", "Lenacapavir", "ART"],
+      "interactions": ["Unknown"],
+      "risks": ["Resistance by escape variants in Env"],
+      "references": [
+        "Gilead AIDS 2026",
+        "ClinicalTrials.gov NCT05729568"
+      ]
+    },
+    "Enfuvirtide": {
+      "name": "Enfuvirtide",
+      "brand": "Fuzeon",
+      "class": "Fusion inhibitor",
+      "type": "Peptide",
+      "mechanism": "Inhibidor de fusión; se une a gp41 previniendo la formación del seis-hélice bundle",
+      "targets": ["Env_gp120_gp41"],
+      "approval_status": "FDA/EMA approved",
+      "route": "Subcutaneous twice daily",
+      "indication": "HIV-1 infection (treatment-experienced)",
+      "evidence": "Approved for MDR HIV",
+      "evidence_level": "High",
+      "synergies": ["Other ARTs"],
+      "interactions": ["Injection-site reactions (high frequency)"],
+      "risks": ["Injection-site reactions", "Pneumonia (higher incidence)"],
+      "references": [
+        "StatPearls 2026"
+      ]
+    },
+    "Ibalizumab": {
+      "name": "Ibalizumab",
+      "brand": "Trogarzo",
+      "class": "Post-attachment inhibitor",
+      "type": "Humanized monoclonal antibody",
+      "mechanism": "Se une a CD4 impidiendo cambios conformacionales post-unión a gp120",
+      "targets": ["CD4"],
+      "approval_status": "FDA approved",
+      "route": "Intravenous",
+      "indication": "HIV-1 MDR infection",
+      "evidence": "Approved for heavily treatment-experienced adults",
+      "evidence_level": "High",
+      "synergies": ["Other ARTs"],
+      "interactions": ["Unknown"],
+      "risks": ["Hypersensitivity reactions", "Anaphylaxis"],
+      "references": [
+        "StatPearls 2026"
+      ]
+    },
+    "Fostemsavir": {
+      "name": "Fostemsavir",
+      "brand": "Rukobia",
+      "class": "Attachment inhibitor",
+      "type": "Small molecule prodrug",
+      "mechanism": "Se une a gp120 impidiendo la unión a CD4",
+      "targets": ["Env_gp120_gp41"],
+      "approval_status": "FDA approved",
+      "route": "Oral twice daily",
+      "indication": "HIV-1 MDR infection",
+      "evidence": "Approved for heavily treatment-experienced adults",
+      "evidence_level": "High",
+      "synergies": ["Other ARTs (optimized background)"],
+      "interactions": ["CYP3A inducers reduce levels"],
+      "risks": ["Immune reconstitution inflammatory syndrome (IRIS)"],
+      "references": [
+        "StatPearls 2026"
+      ]
+    },
+    "Oseltamivir": {
+      "name": "Oseltamivir",
+      "brand": "Tamiflu",
+      "class": "Neuraminidase inhibitor",
+      "type": "Small molecule",
+      "mechanism": "Inhibidor competitivo de neuraminidasa; previene liberación de viriones",
+      "targets": ["Neuraminidase_NA"],
+      "approval_status": "FDA/EMA approved",
+      "route": "Oral",
+      "indication": "Influenza treatment and prevention",
+      "evidence": "WHO recommended; reduces complications and hospitalization",
+      "evidence_level": "High",
+      "synergies": ["Zanamivir", "Baloxavir"],
+      "interactions": ["Probenecid increases levels"],
+      "risks": ["Gastrointestinal upset", "Neuropsychiatric events (rare)"],
+      "references": [
+        "WHO Influenza Guidelines 2024"
+      ]
+    },
+    "Remdesivir": {
+      "name": "Remdesivir",
+      "brand": "Veklury",
+      "class": "Nucleotide analog",
+      "type": "Small molecule",
+      "mechanism": "Análogo de nucleótido que causa terminación de cadena por RdRp",
+      "targets": ["RdRp", "NS5_Polimerasa (investigational)"],
+      "approval_status": "FDA/EMA approved (COVID-19; investigational for other viruses)",
+      "route": "Intravenous",
+      "indication": "COVID-19 (hospitalized); investigational for RSV, filoviruses",
+      "evidence": "ACTT-1 trial reduced recovery time; WHO recommended for severe COVID-19",
+      "evidence_level": "High",
+      "synergies": ["Dexamethasone (COVID-19)", "Nirmatrelvir/ritonavir"],
+      "interactions": ["Chloroquine (antagonism - avoid)"],
+      "risks": ["Hepatotoxicity", "Infusion reactions"],
+      "references": [
+        "WHO COVID-19 Guidelines 2024",
+        "NIH COVID-19 Treatment Guidelines"
+      ]
+    },
+    "Paxlovid": {
+      "name": "Nirmatrelvir/ritonavir",
+      "brand": "Paxlovid",
+      "class": "3CLpro inhibitor + CYP3A inhibitor",
+      "type": "Small molecule combination",
+      "mechanism": "Nirmatrelvir inhibe la proteasa Mpro de SARS-CoV-2; ritonavir aumenta exposición por inhibición de CYP3A",
+      "targets": ["3CLpro_Mpro"],
+      "approval_status": "FDA/EMA approved",
+      "route": "Oral",
+      "indication": "COVID-19 mild-moderate (high risk)",
+      "evidence": "EPIC-HR trial: 89% reduction in hospitalization/death",
+      "evidence_level": "High",
+      "synergies": ["Molnupiravir", "Remdesivir"],
+      "interactions": ["Extensive CYP3A interactions - contraindicated with many drugs"],
+      "risks": ["Dysgeusia", "Diarrhea", "Rebound phenomenon"],
+      "references": [
+        "WHO COVID-19 Guidelines 2024",
+        "NIH COVID-19 Treatment Guidelines"
+      ]
+    },
+    "Nirmatrelvir": {
+      "name": "Nirmatrelvir",
+      "brand": "Paxlovid (component)",
+      "class": "3CLpro inhibitor",
+      "type": "Small molecule",
+      "mechanism": "Inhibidor covalente reversible de la proteasa Mpro de SARS-CoV-2",
+      "targets": ["3CLpro_Mpro"],
+      "approval_status": "Approved as Paxlovid",
+      "route": "Oral (co-administered with ritonavir)",
+      "indication": "COVID-19",
+      "evidence": "EPIC-HR trial",
+      "evidence_level": "High",
+      "synergies": ["Ritonavir", "Other antivirals"],
+      "interactions": ["CYP3A substrate - requires boosting"],
+      "risks": ["Drug-drug interactions"],
+      "references": [
+        "WHO COVID-19 Guidelines 2024"
+      ]
+    },
+    "Atazanavir": {
+      "name": "Atazanavir",
+      "brand": "Reyataz",
+      "class": "Protease inhibitor",
+      "type": "Small molecule",
+      "mechanism": "Inhibidor de la proteasa de VIH-1; bloquea procesamiento de Gag/Gag-Pol",
+      "targets": ["Protease"],
+      "approval_status": "FDA/EMA approved",
+      "route": "Oral daily",
+      "indication": "VIH-1 infection",
+      "evidence": "Approved; used in PI-based regimens",
+      "evidence_level": "High",
+      "synergies": ["Ritonavir", "Cobicistat", "NRTIs"],
+      "interactions": ["CYP3A inducers", "PPIs (reduce atazanavir absorption)"],
+      "risks": ["Hyperbilirubinemia", "Cardiac conduction abnormalities"],
+      "references": [
+        "StatPearls 2026"
+      ]
+    },
+    "Darunavir": {
+      "name": "Darunavir",
+      "brand": "Prezista",
+      "class": "Protease inhibitor",
+      "type": "Small molecule",
+      "mechanism": "Inhibidor de proteasa de segunda generación; alta afinidad por proteasa activa",
+      "targets": ["Protease"],
+      "approval_status": "FDA/EMA approved",
+      "route": "Oral daily (boosted with ritonavir or cobicistat)",
+      "indication": "VIH-1 infection",
+      "evidence": "High barrier to resistance; used in PI-based first-line and salvage regimens",
+      "evidence_level": "High",
+      "synergies": ["Ritonavir", "Cobicistat", "NRTIs", "Integrase inhibitors"],
+      "interactions": ["CYP3A inducers", "CYP3A inhibitors"],
+      "risks": ["Hyperlipidemia", "GI intolerance", "Hepatotoxicity"],
+      "references": [
+        "StatPearls 2026"
+      ]
+    },
+    "Amantadina": {
+      "name": "Amantadine",
+      "brand": "Symmetrel",
+      "class": "M2 ion channel blocker",
+      "type": "Small molecule",
+      "mechanism": "Bloquea el canal iónico M2 de influenza A, previniendo acidificación y liberación de RNA",
+      "targets": ["M2_ion_channel"],
+      "approval_status": "Approved (influenza A; limited use due to resistance)",
+      "route": "Oral",
+      "indication": "Influenza A prophylaxis/treatment (historical); Parkinson's disease",
+      "evidence": "Low due to widespread resistance in circulating influenza A strains",
+      "evidence_level": "Low",
+      "synergies": ["Oseltamivir", "Zanamivir"],
+      "interactions": ["CNS stimulants", "Anticholinergics"],
+      "risks": "CNS effects (insomnia, dizziness), GI upset, widespread resistance",
+      "references": [
+        "WHO Influenza Guidelines 2024"
+      ]
+    },
+    "Rimantadina": {
+      "name": "Rimantadine",
+      "brand": "Flumadine",
+      "class": "M2 ion channel blocker",
+      "type": "Small molecule",
+      "mechanism": "Bloquea el canal iónico M2 de influenza A",
+      "targets": ["M2_ion_channel"],
+      "approval_status": "Approved (limited use)",
+      "route": "Oral",
+      "indication": "Influenza A prophylaxis (historical)",
+      "evidence": "Low due to resistance",
+      "evidence_level": "Low",
+      "synergies": ["Oseltamivir", "Zanamivir"],
+      "interactions": ["Acetaminophen (increases rimantadine levels)"],
+      "risks": ["CNS effects", "GI upset", "Resistance"],
+      "references": [
+        "WHO Influenza Guidelines 2024"
+      ]
+    },
+    "Sofosbuvir": {
+      "name": "Sofosbuvir",
+      "brand": "Sovaldi",
+      "class": "NS5B nucleotide inhibitor",
+      "type": "Small molecule",
+      "mechanism": "Análogo de nucleótido que inhibe la polimerasa NS5B del VHC causando terminación de cadena",
+      "targets": ["NS5B_Polimerasa"],
+      "approval_status": "FDA/EMA approved",
+      "route": "Oral daily",
+      "indication": "Hepatitis C (all genotypes, in combination)",
+      "evidence": "Cure rates >95% in combination with velpatasvir or ledipasvir",
+      "evidence_level": "High",
+      "synergies": ["Ledipasvir", "Velpatasvir", "Daclatasvir", "Simeprevir"],
+      "interactions": ["Amiodarone (serious bradycardia)", "P-gp inducers"],
+      "risks": ["Fatigue", "Headache", "Insomnia", "Bradycardia (with amiodarone)"],
+      "references": [
+        "WHO Guidelines for hepatitis C 2023"
+      ]
+    },
+    "IC2i": {
+      "name": "IC-2i",
+      "brand": "Investigational",
+      "class": "Capsid inhibitor (4-quinazolinone-containing phenylalanine derivative)",
+      "type": "Small molecule",
+      "mechanism": "Inhibidor de cápside de VIH-1; se une a un bolsillo adicional menos propenso a mutaciones; tolera mutaciones resistentes a PF74 y lenacapavir",
+      "targets": ["Capsid_CA"],
+      "approval_status": "Preclinical",
+      "route": "Investigational",
+      "indication": "HIV infection (including drug-resistant variants)",
+      "evidence": "In vitro potent antiviral activity against resistant HIV-1 variants; improved solubility and stability",
+      "evidence_level": "Low (Preclinical)",
+      "synergies": ["Lenacapavir", "Other ARTs"],
+      "interactions": ["Unknown"],
+      "risks": ["Toxicity not established", "Pharmacokinetics not established"],
+      "references": [
+        "MedComm 2026 (ANSTO)",
+        "DOI: 10.1002/mco2.70746"
+      ]
+    },
+    "VH280": {
+      "name": "VH-280 (VH4004280)",
+      "brand": "Investigational",
+      "class": "Capsid inhibitor",
+      "type": "Small molecule",
+      "mechanism": "Inhibidor oral de cápside; se une a bolsillo conservado CPSF6/nucleoporina; interfiere etapas tempranas y tardías",
+      "targets": ["Capsid_CA"],
+      "approval_status": "Phase 1/2a",
+      "route": "Oral / Long-acting injectable (investigational)",
+      "indication": "HIV-1 infection",
+      "evidence": "Phase 1: long half-life (~6-9 days), favorable safety; Phase 2a: substantial viral load reduction",
+      "evidence_level": "Medium (Phase 2a)",
+      "synergies": ["Lenacapavir", "Other ARTs"],
+      "interactions": ["Unknown"],
+      "risks": ["Resistance mutations Q67H, A105E, T107D/N"],
+      "references": [
+        "PLOS Pathogens 2026",
+        "ClinicalTrials.gov NCT06039579, NCT06012136"
+      ]
+    },
+    "Pyrimethamine": {
+      "name": "Pyrimethamine",
+      "brand": "Daraprim",
+      "class": "DHFR inhibitor",
+      "type": "Small molecule",
+      "mechanism": "Inhibe la dihidrofolato reductasa de Plasmodium spp.",
+      "targets": ["DHFR"],
+      "approval_status": "FDA/EMA approved",
+      "route": "Oral",
+      "indication": "Malaria prophylaxis/treatment; toxoplasmosis",
+      "evidence": "WHO recommended for malaria in combination with sulfadoxine (IPTp-SP)",
+      "evidence_level": "High",
+      "synergies": ["Sulfadoxine", "Artemisinin derivatives"],
+      "interactions": ["Warfarin (increased effect)", "AZT (increased toxicity)"],
+      "risks": ["Hemolysis in G6PD deficiency", "Megaloblastic anemia", "Folate deficiency"],
+      "references": [
+        "WHO Guidelines for malaria 2023"
+      ]
+    },
+    "Atovaquona": {
+      "name": "Atovaquone",
+      "brand": "Mepron / Malarone (with proguanil)",
+      "class": "Cytochrome bc1 inhibitor",
+      "type": "Small molecule",
+      "mechanism": "Inhibe el complejo citocromo bc1 mitocondrial de Plasmodium spp.",
+      "targets": ["Cytochrome_b"],
+      "approval_status": "FDA/EMA approved",
+      "route": "Oral",
+      "indication": "Malaria prophylaxis/treatment; PCP prophylaxis",
+      "evidence": "WHO recommended for malaria; used in Malarone",
+      "evidence_level": "High",
+      "synergies": ["Proguanil", "Artemisinin derivatives"],
+      "interactions": ["Warfarin (increased effect)", "Tetracycline (increased atovaquone levels)"],
+      "risks": ["GI upset", "Rash", "Hepatotoxicity (rare)"],
+      "references": [
+        "WHO Guidelines for malaria 2023"
+      ]
+    },
+    "Rifampicin": {
+      "name": "Rifampicin",
+      "brand": "Rifadin",
+      "class": "RNA polymerase inhibitor",
+      "type": "Small molecule",
+      "mechanism": "Se une a la subunidad beta de la RNA polimerasa bacteriana, bloqueando la transcripción",
+      "targets": ["RNA_polimerasa_beta"],
+      "approval_status": "FDA/EMA approved",
+      "route": "Oral / IV",
+      "indication": "Tuberculosis (first-line); other mycobacterial infections",
+      "evidence": "WHO recommended for TB; cornerstone of TB treatment",
+      "evidence_level": "High",
+      "synergies": ["Isoniazid", "Pyrazinamide", "Ethambutol", "Bedaquiline"],
+      "interactions": ["Extensive CYP inducer - affects many drugs (including ARTs, anticoagulants)"],
+      "risks": ["Hepatotoxicity", "Discoloration of body fluids", "Drug interactions (CYP inducer)"],
+      "references": [
+        "WHO Global TB Report 2024"
+      ]
+    },
+    "Isoniazida": {
+      "name": "Isoniazid",
+      "brand": "INH",
+      "class": "Mycolic acid synthesis inhibitor",
+      "type": "Small molecule",
+      "mechanism": "Inhibe InhA después de activación por KatG; bloquea síntesis de ácidos micólicos",
+      "targets": ["InhA"],
+      "approval_status": "FDA/EMA approved",
+      "route": "Oral / IM",
+      "indication": "Tuberculosis (first-line); latent TB",
+      "evidence": "WHO recommended for TB; cornerstone of TB treatment",
+      "evidence_level": "High",
+      "synergies": ["Rifampicin", "Pyrazinamide", "Ethambutol", "Bedaquiline"],
+      "interactions": ["Phenytoin (increased levels)", "Carbamazepine"],
+      "risks": ["Hepatotoxicity", "Peripheral neuropathy (pyridoxine deficient)", "Sideroblastic anemia"],
+      "references": [
+        "WHO Global TB Report 2024"
+      ]
+    },
+    "Bedaquiline": {
+      "name": "Bedaquiline",
+      "brand": "Sirturo",
+      "class": "ATP synthase inhibitor",
+      "type": "Small molecule",
+      "mechanism": "Inhibe la ATP sintasa de M. tuberculosis; mecanismo único",
+      "targets": ["ATP_synthase_Mtb"],
+      "approval_status": "FDA/EMA approved",
+      "route": "Oral",
+      "indication": "MDR-TB / XDR-TB",
+      "evidence": "WHO recommended for MDR-TB; improves outcomes in XDR-TB",
+      "evidence_level": "High",
+      "synergies": ["Pretomanid", "Linezolid", "Isoniazid", "Rifampicin"],
+      "interactions": ["CYP3A4 inducers reduce levels"],
+      "risks": ["QT prolongation", "Hepatotoxicity"],
+      "references": [
+        "WHO Global TB Report 2024"
+      ]
+    }
+  }
+}
